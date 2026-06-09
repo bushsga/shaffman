@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 18%);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: hsl(214, 60%, 10%);
+    color: hsl(0, 0%, 90%);
+  }
+
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4 {
+    color: white;
+  }
+
+  .dark p {
+    color: hsl(0, 0%, 75%);
+  }
+
+  .dark section {
+    background-color: hsl(214, 60%, 10%);
+  }
+
+  .dark .bg-white {
+    background-color: hsl(214, 50%, 16%) !important;
+  }
+
+  .dark .bg-gray-light {
+    background-color: hsl(214, 50%, 13%) !important;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 85%, 45%);
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: hsl(214, 60%, 10%);
+}
+
+/* Breaking news ticker animation */
+@keyframes ticker {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.ticker-animation {
+  animation: ticker 20s linear infinite;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
