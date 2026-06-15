@@ -5,7 +5,7 @@ import { postSchema } from "./src/lib/schema";
 export default defineConfig({
   name: "shaffman",
   title: "Shaffman Studio",
-  projectId: "ztozv5lg",
+  projectId: "j917mw0p",
   dataset: "production",
   plugins: [deskTool()],
   schema: {
