@@ -60,9 +60,7 @@ const Footer = () => {
           <p className="text-white/40 font-body text-sm">
             © {currentYear} Shaffman. All rights reserved.
           </p>
-          <p className="text-white/40 font-body text-sm">
-            Built with ❤️ by Ibrahim Jamiu Akeem
-          </p>
+        
         </div>
       </div>
     </footer>
